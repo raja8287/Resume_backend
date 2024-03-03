@@ -27,6 +27,6 @@ app.post('/',async(req,resp)=>{
 
 
 
-app.listen(process.env.Port,()=>{
-    console.log(` sever is runing on :${process.env.Port}`);
+app.listen(4000,()=>{
+    console.log(` sever is runing on 4000`);
 })
