@@ -1,7 +1,7 @@
 const app=require("express")();
 require("dotenv").config();
 var bodyParser = require("body-parser");
-
+const Port=process.env.Port ||4000
 const dm=require('./Dbconfi/Db_confi');
 const cors=require('cors');
 app.use(cors());
@@ -27,6 +27,6 @@ app.post('/',async(req,resp)=>{
 
 
 
-app.listen(4000,()=>{
-    console.log(` sever is runing on 4000`);
+app.listen(Port,()=>{
+    console.log(` sever is runing on ${Port}`);
 })
