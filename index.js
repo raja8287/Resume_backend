@@ -7,12 +7,13 @@ const cors=require('cors');
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-/*
+
 app.get('/',async(req,resp)=>{
     let data= await dm.find();
     console.log("this:",req.body)
     resp.send(data);
 })
+/*
 app.post('/',async(req,resp)=>{
     console.log(req.body);
     let data=await dm.create({
