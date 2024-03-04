@@ -13,7 +13,7 @@ app.get('/',async(req,resp)=>{
     console.log("this:",req.body)
     resp.send("hello world"+data);
 })
-/*
+
 app.post('/',async(req,resp)=>{
     console.log(req.body);
     let data=await dm.create({
@@ -24,7 +24,7 @@ app.post('/',async(req,resp)=>{
 
     resp.send(`done ${data}`);
 
-})*/
+})
 
 
 
