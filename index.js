@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/',async(req,resp)=>{
     let data= await dm.find();
     console.log("this:",req.body)
-    resp.send(data);
+    resp.send("hello world"+data);
 })
 /*
 app.post('/',async(req,resp)=>{
